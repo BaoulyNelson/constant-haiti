@@ -1,0 +1,80 @@
+/* Centrage de tous les éléments de .container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre horizontalement */
+    justify-content: center; /* Centre verticalement si nécessaire */
+    text-align: center; /* Centre le texte dans les éléments */
+}
+
+/* Centrage des éléments à l'intérieur des colonnes */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centre les colonnes horizontalement */
+    align-items: center; /* Centre le contenu des colonnes verticalement */
+    margin-bottom: 20px;
+}
+
+/* Centrage des éléments spécifiques dans les colonnes */
+.col-md-3, .col-md-9 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.col-md-4 img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.small-image {
+    width: 50px; /* Taille par défaut pour petits écrans */
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Ajustement pour les écrans moyens */
+@media (min-width: 768px) {
+    .small-image {
+        width: 100px; /* Taille plus grande pour les écrans moyens */
+    }
+}
+
+/* Ajustement pour les écrans larges */
+@media (min-width: 1200px) {
+    .small-image {
+        width: 150px; /* Taille encore plus grande pour les grands écrans */
+    }
+}
+
+/* Pour le texte des articles et les liens */
+.col-md-8 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Centrage des titres et des paragraphes */
+.col-md-8 h2, .col-md-8 p {
+    margin: 0 auto;
+}
+
+/* Pagination centrée */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Ajustement des marges et padding pour l'espacement */
+.mb-4 {
+    margin-bottom: 1.5rem;
+}
+
+
